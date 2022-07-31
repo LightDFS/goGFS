@@ -48,11 +48,11 @@ func newDownloadBuffer(expire, tick time.Duration) *downloadBuffer {
 	return buf
 }
 
-// allocate a new DataID for given handle
+// NewDataID allocate a new DataID for given handle
 func NewDataID(handle gfs.ChunkHandle) gfs.DataBufferID {
 	now := time.Now()
 	timeStamp := now.Nanosecond() + now.Second()*1000 + now.Minute()*60*1000
-	return gfs.DataBufferID{handle, timeStamp}
+	return gfs.DataBufferID{Handle: handle, TimeStamp: timeStamp}
 }
 
 func (buf *downloadBuffer) Set(id gfs.DataBufferID, data []byte) {
