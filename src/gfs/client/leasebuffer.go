@@ -1,8 +1,8 @@
 package client
 
 import (
-	"gfs"
-	"gfs/util"
+	"github.com/gfs/src/gfs"
+	"github.com/gfs/src/gfs/util"
 	"sync"
 	"time"
 	//log "github.com/Sirupsen/logrus"

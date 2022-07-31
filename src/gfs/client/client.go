@@ -6,10 +6,10 @@ import (
 	"math/rand"
 	"time"
 
-	"gfs"
-	"gfs/chunkserver"
-	"gfs/util"
 	log "github.com/Sirupsen/logrus"
+	"github.com/gfs/src/gfs"
+	"github.com/gfs/src/gfs/chunkserver"
+	"github.com/gfs/src/gfs/util"
 )
 
 // Client struct is the GFS client-side driver

@@ -1,11 +1,11 @@
 package main
 
 import (
-	"gfs"
-	"gfs/chunkserver"
-	"gfs/client"
-	"gfs/master"
-	"gfs/util"
+	"github.com/gfs/src/gfs"
+	"github.com/gfs/src/gfs/chunkserver"
+	"github.com/gfs/src/gfs/client"
+	"github.com/gfs/src/gfs/master"
+	"github.com/gfs/src/gfs/util"
 	"reflect"
 
 	"fmt"
@@ -118,7 +118,7 @@ func TestRPCGetChunkHandle(t *testing.T) {
 		t.Error(err)
 	}
 	if r1.Handle != r2.Handle {
-		t.Error("got different handle: %v and %v", r1.Handle, r2.Handle)
+		t.Errorf("got different handle: %v and %v", r1.Handle, r2.Handle)
 	}
 
 	err = m.RPCGetChunkHandle(gfs.GetChunkHandleArg{path, 2}, &r2)

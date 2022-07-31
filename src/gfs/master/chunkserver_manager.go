@@ -2,13 +2,14 @@ package master
 
 import (
 	"fmt"
+	"github.com/gfs/src/gfs"
+
 	//"math/rand"
 	"sync"
 	"time"
 
-	"gfs"
-	"gfs/util"
 	log "github.com/Sirupsen/logrus"
+	"github.com/gfs/src/gfs/util"
 )
 
 // chunkServerManager manages chunkservers

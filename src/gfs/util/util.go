@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"net/rpc"
 
-	"gfs"
+	"github.com/gfs/src/gfs"
 )
 
 // Call is RPC call helper
